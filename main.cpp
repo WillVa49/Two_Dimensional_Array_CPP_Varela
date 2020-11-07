@@ -1,6 +1,9 @@
+/*Wilfrido Varela
+Dr_T  11/5/2020
+A program to practice working with multi-dimensional arrays
+*/
 #include <iostream>
 using namespace std;
-
 
 int main()
 
@@ -15,13 +18,9 @@ int main()
     int temperature1[Austin][WEEK];
     int temperature2[Waco][WEEK];
 
-
+    //Inserting values into the temperature array
     cout << "Enter all temperature for a week of first city and then second city. \n";
-
- 
-
-
-
+    //Inserting temperature values to Austin
     for (int i = 0; i < Austin; ++i)
     {
         for(int j = 0; j < WEEK; ++j)
@@ -30,7 +29,7 @@ int main()
             cin >> temperature1[i][j];
         }
     }
-
+    //Inserting temperature values to Waco
     for (int i = 0; i < Waco; ++i)
     {
       for (int j = 0; j < WEEK; ++j)
@@ -40,6 +39,7 @@ int main()
       }
     }
 
+    //Accessing the values from the temperature array
     cout << "\n\nDisplaying Values:\n"; 
 
     for (int i = 0; i < Austin; ++i)
